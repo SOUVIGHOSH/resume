@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   width: 95vw;
 }
 
@@ -53,7 +53,6 @@
   display: inline-block;
   width: 50vw;
   height: 30vh;
-  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,4 +62,99 @@
 .contact-col > div {
   margin-left: 2vw;
   margin-bottom: 2vh;
+  margin-left: 5vw;
+}
+
+.contact-col__item :first-child {
+  color: grey;
+  margin-right: 5px;
+}
+
+.skills,
+.experience,
+.awards,
+.certification,
+.education {
+  padding: 2%;
+}
+
+.skills-group > div:first-of-type,
+.experience-group > div:first-of-type,
+.awards > div:first-of-type,
+.certification > div:first-of-type,
+.education > div:first-of-type {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid grey;
+}
+.skills-set {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills-set > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  color: white;
+  border-radius: 20px;
+  height: 5vh;
+  padding: 0.3% 1%;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  line-height: 5vw;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.experience-group__section {
+  margin-top: 2vh;
+  font-weight: bold;
+  color: blue;
+}
+
+.experience-group__section > h4,
+.experience-group__section > h6 {
+  margin: 0;
+  color: grey;
+}
+
+li > p {
+  color: gray;
+}
+
+.award-group {
+  display: flex;
+}
+
+.award-card {
+  background: gray;
+  color: white;
+  width: 15vw;
+  height: 15vh;
+  border-radius: 5px;
+  margin: 2rem;
+  padding: 1%;
+}
+.award-card > h4,
+.award-card > h6 {
+  margin: 0.3vh;
+}
+
+.award-card__title {
+  border-bottom: 1px solid wheat;
+}
+
+.education > h4,
+.education > h6 {
+  margin: 0;
+  color: gray;
+}
+.education > h2 {
+  color: blue;
+}
+
+.nav-link :first-child {
+  margin-right: 5px;
+  cursor: pointer;
 }
